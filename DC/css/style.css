@@ -4,12 +4,12 @@ html, body{
 
 @font-face{
     font-family: "DCWeb-book";
-    src: url("fonts/ClanPro-Book.otf") format("opentype");
+    src: url("../fonts/ClanPro-Book.otf") format("opentype");
 }
 
 @font-face{
     font-family: "DCWeb-news";
-    src: url("fonts/ClanPro-News.otf") format("opentype");
+    src: url("../fonts/ClanPro-News.otf") format("opentype");
 }
 
 .brand{
