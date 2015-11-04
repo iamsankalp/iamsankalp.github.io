@@ -22,7 +22,7 @@ html, body{
 }
 
 .intro-pitch{
-    font-family: "ProximaNova-Regular", "sans-serif";
+    font-family: "ClanPro-Book", "sans-serif";
     text-align: center;
     font-size: 2rem;
     line-height: 3rem;
@@ -30,7 +30,7 @@ html, body{
 }
 
 .pitch-focus{
-    font-family: "ProximaNova-Semibold"
+    font-family: "ClanPro-News"
 }
 
 .hint-text{
@@ -38,14 +38,14 @@ html, body{
     position: absolute;
     display: block;
     bottom: 10px;
-    font-family: "ProximaNova-LightIt";
+    font-family: "ClanPro-Book";
     font-size: 1rem;
     color: #E2E2E2;
 }
 
 .section-top-head{
     text-align: center;
-    font-family: "ProximaNova-Bold";
+    font-family: "ClanPro-News";
     font-size: 1.2rem;
     color: #4A4A4A;
 }
