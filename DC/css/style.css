@@ -1,0 +1,63 @@
+html, body{
+    font-size: 18px;
+}
+
+.brand{
+    height: 100vh;
+    -webkit-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack:center;
+    -webkit-justify-content:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+}
+
+.logo{
+    margin-bottom: 2rem;
+}
+
+.intro-pitch{
+    font-family: "ProximaNova-Regular", "sans-serif";
+    text-align: center;
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 300;
+}
+
+.pitch-focus{
+    font-family: "ProximaNova-Semibold"
+}
+
+.hint-text{
+    text-align: center;
+    position: absolute;
+    display: block;
+    bottom: 10px;
+    font-family: "ProximaNova-LightIt";
+    font-size: 1rem;
+    color: #E2E2E2;
+}
+
+.section-top-head{
+    text-align: center;
+    font-family: "ProximaNova-Bold";
+    font-size: 1.2rem;
+    color: #4A4A4A;
+}
+
+.section-top-hr{
+    width: 30%;
+}
+
+.section-top-desc{
+    text-align: center;
+    font-family: "OpenSans-Light";
+    font-size: 1rem;
+    color: #9B9B9B;
+    line-height: 1.5;
+}
