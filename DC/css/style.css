@@ -2,6 +2,16 @@ html, body{
     font-size: 18px;
 }
 
+@font-face{
+    font-family: "DCWeb-book";
+    src: url(fonts/ClanPro-Book.otf);
+}
+
+@font-face{
+    font-family: "DCWeb-news";
+    src: url(fonts/ClanPro-News.otf);
+}
+
 .brand{
     height: 100vh;
     -webkit-flex-flow: column wrap;
@@ -22,7 +32,7 @@ html, body{
 }
 
 .intro-pitch{
-    font-family: "ClanPro-Book", "sans-serif";
+    font-family: "DCWeb-book", "sans-serif";
     text-align: center;
     font-size: 2rem;
     line-height: 3rem;
@@ -30,13 +40,13 @@ html, body{
 }
 
 .pitch-focus{
-    font-family: "ClanPro-News"
+    font-family: "DCWeb-news"
 }
 
 .hint-text{
     text-align: center;
     bottom: 10px;
-    font-family: "ClanPro-Book";
+    font-family: "DCWeb-book";
     font-size: 1rem;
     color: #E2E2E2;
     bottom: 3rem;
@@ -44,7 +54,7 @@ html, body{
 
 .section-top-head{
     text-align: center;
-    font-family: "ClanPro-News";
+    font-family: "DCWeb-news";
     font-size: 1.2rem;
     color: #4A4A4A;
 }
