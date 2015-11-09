@@ -102,23 +102,25 @@ a:hover, a:visited, a:link, a:active{
  /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {
     .intro-pitch{
-        font-size: 1.2rem;
-        line-height: 1.8rem;
+        font-size: 0.9rem;
+        line-height: 1.4rem;
     }
      
      .touch-text{
-         font-size: 0.4rem;
+         padding: 0.1rem 0 0.1rem 0;
+         font-size: 0.8rem;
      }
 }
 
 /* Extra Small Devices, Phones */ 
  @media only screen and (max-width : 480px) {
      .intro-pitch{
-         font-size: 1.5rem;
-         line-height: 2rem;
+         font-size: 1.1rem;
+         line-height: 1.9rem;
      }
      
      .touch-text{
-         font-size: 0.6rem;
+         padding: 0.3rem 0 0.3rem 0;
+         font-size: 0.9rem;
      }
 }
