@@ -1,0 +1,87 @@
+@font-face{
+    font-family: "DC-Book";
+    src: url("../fonts/ClanPro-Book.otf") format("opentype");
+}
+
+@font-face{
+    font-family: "DC-News";
+    src: url("../fonts/ClanPro-News.otf") format("opentype");
+}
+
+html, body{
+    font-family: "DC-Book", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.center{
+    display: block;
+    float: none;
+    margin-left: auto !important;
+    margin-right: auto;
+}
+
+.navigation{
+    opacity: 0;
+    display: none;
+}
+
+.hero{
+    height: 100vh;    
+}
+
+.pitch{
+    text-align: center;
+    color: #2D303C;
+}
+
+.pitch-break{
+    display: none;
+}
+
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.brand{
+    padding: 8rem 0 7rem;
+}
+
+/* Mobile First Media Queries
+--------------------------------------------------------------- */
+
+/* Larger than mobile */
+@media (min-width: 400px){
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    
+    .pitch{
+      font-size: 3.5rem;
+    }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px){
+    .pitch{
+      font-size: 4.0rem;
+    }
+    
+    .pitch-break{
+        display: inherit;
+    }
+    
+    /*
+    .navigation{
+        display: inherit;
+    }
+    */
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px){
+    .pitch{
+      font-size: 4.5rem;
+    }
+}
