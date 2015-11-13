@@ -24,13 +24,10 @@ html, body{
     display: none;
 }
 
-.hero{
-    height: 100vh;    
-}
-
 .pitch{
+    margin: 2.5rem 0 2.5rem 0;
     text-align: center;
-    color: #2D303C;
+    color: #303030;
 }
 
 .pitch-break{
@@ -39,8 +36,53 @@ html, body{
 
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 .brand{
-    padding: 8rem 0 7rem;
+    height: 100vh;
+    -webkit-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack:center;
+    -webkit-justify-content:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+}
+
+.logo{
+    max-width: 24rem;
+}
+
+a:hover, a:visited, a:link, a:active{
+    text-decoration: none;
+}
+
+.touch-button{
+    padding: 1.2rem 0.8rem 0 0.8rem;
+    border: 0.1rem solid #303030;
+    border-radius: 0.3rem;
+    height: 3.6rem;
+}
+
+.touch-button:hover{
+    transition: background-color 0.5s ease;
+    background-color: #303030;
+}
+
+
+.touch-text{
+    text-align: center;
+    font-family: "DC-News";
+    font-size: 1.5rem;
+    color: #303030;
+}
+
+.touch-button:hover .touch-text{
+    transition: color 0.5s ease;
+    color: #fff;    
 }
 
 /* Mobile First Media Queries
@@ -56,16 +98,21 @@ html, body{
 
 /* Larger than tablet */
 @media (min-width: 750px) {
+    .logo{
+        max-width: none;
+        max-height: 7rem;
+    }
     
     .pitch{
-      font-size: 3.5rem;
+        margin: 3.0rem 0 3.0rem 0;
+        font-size: 3.5rem;
     }
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px){
     .pitch{
-      font-size: 4.0rem;
+        font-size: 4.0rem;
     }
     
     .pitch-break{
@@ -82,6 +129,7 @@ html, body{
 /* Larger than Desktop HD */
 @media (min-width: 1200px){
     .pitch{
-      font-size: 4.5rem;
+        margin: 4.0rem 0 4.0rem 0;
+        font-size: 4.5rem;
     }
 }
