@@ -105,21 +105,28 @@ a:hover, a:visited, a:link, a:active{
     color: #fff;    
 }
 
- /* Custom, iPhone Retina */ 
-@media only screen and (max-width : 320px) {
-    .intro-pitch{
-        font-size: 0.9rem;
-        line-height: 1.4rem;
-    }
+@media only screen and (max-width : 640px) {
+     .logo{
+        height: 50px;
+     }
+     
+     .intro-pitch{
+         font-size: 1.5rem;
+         line-height: 2.2rem;
+     }
      
      .touch-text{
-         padding: 0.1rem 0 0.1rem 0;
-         font-size: 0.7rem;
+         padding: 0.3rem 0 0.3rem 0;
+         font-size: 0.8rem;
      }
 }
 
 /* Extra Small Devices, Phones */ 
  @media only screen and (max-width : 480px) {
+     .logo{
+        height: 40px;
+     }
+     
      .intro-pitch{
          font-size: 1.1rem;
          line-height: 1.9rem;
@@ -128,5 +135,22 @@ a:hover, a:visited, a:link, a:active{
      .touch-text{
          padding: 0.3rem 0 0.3rem 0;
          font-size: 0.8rem;
+     }
+}
+
+ /* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    .logo{
+        height: 30px;
+    }
+    
+    .intro-pitch{
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
+     
+     .touch-text{
+         padding: 0.1rem 0 0.1rem 0;
+         font-size: 0.7rem;
      }
 }
