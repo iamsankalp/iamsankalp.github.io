@@ -264,6 +264,7 @@ a:hover {color: inherit;}
     
     .team-description{
         display: inherit;
+        margin-top: -1rem;
     }
 }
 
