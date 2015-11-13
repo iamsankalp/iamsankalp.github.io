@@ -96,7 +96,7 @@ a:hover {color: inherit;}
 
 #partners{
     background-color: #f9f9f9;
-    padding: 10rem 1rem 6rem 1rem;
+    padding: 10rem 1rem 10rem 1rem;
 }
 
 .section-heading{
@@ -187,17 +187,35 @@ a:hover {color: inherit;}
 
 #jobs{
     background-color: #f9f9f9;
-    padding: 10rem 1rem 6rem 1rem;
+    padding: 10rem 1rem 10rem 1rem;
 }
 
 #quote{
     background-color: #ffffff;
-    padding: 10rem 1rem 6rem 1rem;
+    padding: 10rem 1rem 8rem 1rem;
+}
+
+.quote-label{
+    font-family: "DC-Book";
+    color: #9b9b9b;
+}
+
+.quote-content{
+    border-left: thick solid #303030;
+}
+
+.design-quote, .quote-credit{
+    padding-left: 4rem;
+}
+
+.quote-credit{
+    font-family: "DC-News";
+    color: #9b9b9b;
 }
 
 #footer{
     background-color: #eaeaea;
-    padding: 3rem 1rem 3rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
 }
 
 .footer-logo{
