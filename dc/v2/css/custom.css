@@ -166,6 +166,10 @@ a:hover {color: inherit;}
     padding: 2rem 0 0 0;
 }
 
+.touch-box:hover{
+    background-color: #353535;
+}
+
 
 #team{
     background-color: #ffffff;
