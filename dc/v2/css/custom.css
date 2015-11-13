@@ -97,6 +97,7 @@ a:hover {color: inherit;}
 #partners{
     background-color: #f9f9f9;
     padding: 10rem 1rem 10rem 1rem;
+    border-top: 1px solid #e1e1e1;
 }
 
 .section-heading{
@@ -174,6 +175,7 @@ a:hover {color: inherit;}
 #team{
     background-color: #ffffff;
     padding: 10rem 1rem 6rem 1rem;
+    border-top: 1px solid #e1e1e1;
 }
 
 .team-member{
@@ -202,11 +204,13 @@ a:hover {color: inherit;}
 #jobs{
     background-color: #f9f9f9;
     padding: 10rem 1rem 10rem 1rem;
+    border-top: 1px solid #e1e1e1;
 }
 
 #quote{
     background-color: #ffffff;
     padding: 10rem 1rem 8rem 1rem;
+    border-top: 1px solid #e1e1e1;
 }
 
 .quote-label{
