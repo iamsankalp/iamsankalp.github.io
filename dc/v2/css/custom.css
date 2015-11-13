@@ -8,8 +8,9 @@
     src: url("../fonts/ClanPro-News.otf") format("opentype");
 }
 
-html, body{
+html, body, h1, h2, h3, h4, h5, a, p{
     font-family: "DC-Book", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: normal;
 }
 
 .center{
@@ -60,6 +61,9 @@ a:hover, a:visited, a:link, a:active{
     text-decoration: none;
 }
 
+a { color: inherit; }
+a:hover {color: inherit;}
+
 .touch-button{
     padding: 1.2rem 0.8rem 0 0.8rem;
     border: 0.1rem solid #303030;
@@ -75,7 +79,7 @@ a:hover, a:visited, a:link, a:active{
 
 .touch-text{
     text-align: center;
-    font-family: "DC-News";
+    font-family: "DC-Book";
     font-size: 1.5rem;
     color: #303030;
 }
@@ -83,6 +87,102 @@ a:hover, a:visited, a:link, a:active{
 .touch-button:hover .touch-text{
     transition: color 0.5s ease;
     color: #fff;    
+}
+
+
+.section-break{
+    max-width: 48rem;
+}
+
+#partners{
+    background-color: #f9f9f9;
+    padding: 10rem 1rem 6rem 1rem;
+}
+
+.section-heading{
+    text-align: center;
+    font-family: "DC-News";
+    color: #303030;
+}
+
+.section-description{
+    text-align: center;
+    font-family: "DC-Book";
+    color: #9b9b9b;
+}
+
+.partner-box{
+    position: relative;
+    background: #ffffff;
+    border: 0.1rem solid #DDDDDD;
+    height: 22rem;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.partner-box:hover{
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.10);
+}
+
+.partner-logo{
+    padding: 5rem 0 5rem 0;
+}
+
+.partner-industry{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: #9b9b9b;
+}
+
+.partner-break{
+    margin-bottom: 2rem;
+}
+
+.partner-pitch{
+    text-align: center;
+    padding: 2rem 1rem 0rem 1rem;
+}
+
+.partner-pitch-head{
+    font-family: "DC-News";
+}
+
+.partner-pitch-description{
+    padding: -1rem 0 0 0;
+    text-align: center;
+    font-family: "DC-Book";
+    color: #9b9b9b;
+}
+
+.touch-box{
+    background-color: #303030;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: #ffffff;
+    padding: 2rem 0 0 0;
+}
+
+
+#team{
+    background-color: #ffffff;
+    padding: 10rem 1rem 6rem 1rem;
+}
+
+.team-member{
+    padding: 4rem 0 2rem 0;
+}
+
+.team-name, .team-role{
+    font-family: "DC-News";
+}
+
+.team-description{
+    font-family: "DC-Book";
+    color: #9b9b9b;
 }
 
 /* Mobile First Media Queries
