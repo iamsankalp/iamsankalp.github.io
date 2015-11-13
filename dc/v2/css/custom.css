@@ -178,11 +178,21 @@ a:hover {color: inherit;}
 
 .team-name, .team-role{
     font-family: "DC-News";
+    text-align: center;
+}
+
+.team-name{
+    margin-top: 2rem;
+}
+    
+.team-role{
+    margin-top: -1rem;
 }
 
 .team-description{
     font-family: "DC-Book";
     color: #9b9b9b;
+    display: none;
 }
 
 #jobs{
@@ -215,7 +225,7 @@ a:hover {color: inherit;}
 
 #footer{
     background-color: #eaeaea;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 2rem 1rem 2rem 1rem;
 }
 
 .footer-logo{
@@ -230,6 +240,22 @@ a:hover {color: inherit;}
 
 /* Larger than phablet */
 @media (min-width: 550px) {
+    .team-name, .team-role{
+        font-family: "DC-News";
+        text-align: left;
+    }
+    
+    .team-name{
+        margin-top: auto;
+    }
+    
+    .team-role{
+        margin-top: -2rem;
+    }
+    
+    .team-description{
+        display: inherit;
+    }
 }
 
 /* Larger than tablet */
