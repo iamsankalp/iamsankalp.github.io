@@ -185,6 +185,24 @@ a:hover {color: inherit;}
     color: #9b9b9b;
 }
 
+#jobs{
+    background-color: #f9f9f9;
+    padding: 10rem 1rem 6rem 1rem;
+}
+
+#quote{
+    background-color: #ffffff;
+    padding: 10rem 1rem 6rem 1rem;
+}
+
+#footer{
+    background-color: #eaeaea;
+    padding: 3rem 1rem 3rem 1rem;
+}
+
+.footer-logo{
+    opacity: 0.1;
+}
 /* Mobile First Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
