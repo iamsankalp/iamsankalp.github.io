@@ -13,8 +13,14 @@ html, body, h1, h2, h3, h4, h5, a, p{
     letter-spacing: normal;
 }
 
+body{
+    font-size: 10px;
+}
+
 .center{
     display: block;
+    /* Because bootstrap has columns on float:left by default */
+    float: none !important;
     margin-left: auto !important;
     margin-right: auto !important;
 }
@@ -33,7 +39,13 @@ html, body, h1, h2, h3, h4, h5, a, p{
 }
 
 .logo{
-    width: 20rem;
+    width: 20em;
+}
+
+.pitch{
+    font-size: 2.0em;
+    line-height: 1.5em;
+    text-align: center;
 }
 
 /* Custom, iPhone Retina */ 
@@ -42,28 +54,31 @@ html, body, h1, h2, h3, h4, h5, a, p{
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
-    .logo{
-        width: 22rem;
+    body{
+        font-size: 11px;
     }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-    .logo{
-        width: 24rem;
+    body{
+        font-size: 12px;
     }
+    
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-    .logo{
-        width: 25rem;
+    body{
+        font-size: 13px;
     }
+    
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-    .logo{
-        width: 26rem;
+    body{
+        font-size: 14px;
     }
+    
 }
