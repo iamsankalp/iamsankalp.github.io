@@ -11,10 +11,19 @@
 html, body, h1, h2, h3, h4, h5, a, p{
     font-family: "DC-Book", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: normal;
+    color: rgb(46, 48, 61);
 }
 
 body{
     font-size: 10px;
+}
+
+a:hover, a:visited, a:link, a:active{
+    text-decoration: none;
+}
+
+a, a:hover{
+    color: inherit;
 }
 
 .center{
@@ -23,6 +32,12 @@ body{
     float: none !important;
     margin-left: auto !important;
     margin-right: auto !important;
+}
+
+/* INTRO SECTION */
+
+#intro{
+    background-color: #ECEFF1;
 }
 
 .brand{
@@ -46,6 +61,88 @@ body{
     font-size: 2.0em;
     line-height: 1.5em;
     text-align: center;
+    margin: 1em 0 1.5em 0;
+}
+
+.pitch-break{
+    display: none;
+}
+
+.outline-button{
+    height: 3.539em;
+    padding: 1em; 
+    text-align: center;
+    font-size: 1.2em;
+    border: 1px solid rgb(46, 48, 61);
+    border-radius: 3px; 
+}
+
+.outline-button:hover{
+    transition: background-color 0.5s ease;
+    color: rgb(255,255,255);
+    background-color: rgb(46, 48, 61);
+}
+
+.scroll-box{
+    position: absolute;
+    bottom: 1em;
+    right: 0;
+    left: 0;
+}
+
+.scroll-arrow{
+    width: 1.2em;
+    opacity: 0.3;
+    position: relative;
+}
+
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.twice {
+  -webkit-animation-iteration-count: 2;
+  animation-iteration-count: 2;
 }
 
 /* Custom, iPhone Retina */ 
