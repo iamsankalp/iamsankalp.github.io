@@ -179,3 +179,13 @@ a, a:hover{
     }
     
 }
+
+@media screen and (orientation:landscape) {
+    .scroll-box{
+        display: none;
+    }
+    
+    .brand{
+        height: auto;
+    }
+}
