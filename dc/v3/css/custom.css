@@ -1,29 +1,69 @@
-.center{
-    margin-left: auto;
-    float: none;
-    margin-right: auto;
-    display: block;
+@font-face{
+    font-family: "DC-Book";
+    src: url("../fonts/ClanPro-Book.otf") format("opentype");
 }
 
-.brand-logo{
-    max-width: 24rem;
-    /* Internet Explorer 10 */
-display:-ms-flexbox;
--ms-flex-pack:center;
--ms-flex-align:center;
+@font-face{
+    font-family: "DC-News";
+    src: url("../fonts/ClanPro-News.otf") format("opentype");
+}
 
-/* Firefox */
-display:-moz-box;
--moz-box-pack:center;
--moz-box-align:center;
+html, body, h1, h2, h3, h4, h5, a, p{
+    font-family: "DC-Book", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: normal;
+}
 
-/* Safari, Opera, and Chrome */
-display:-webkit-box;
--webkit-box-pack:center;
--webkit-box-align:center;
+.center{
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
 
-/* W3C */
-display:box;
-box-pack:center;
-box-align:center;
+.brand{
+    height: 100vh;
+    display: flex;
+    /* Vertical align: */
+    align-items: center;
+    /* Horizontal align: */
+    justify-content: center;
+    /* Safari: */
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+}
+
+.logo{
+    width: 20rem;
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    .logo{
+        width: 22rem;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .logo{
+        width: 24rem;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .logo{
+        width: 25rem;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .logo{
+        width: 26rem;
+    }
 }
