@@ -390,6 +390,10 @@ a, a:hover{
         margin-top: 6em;
     }
     
+    .help-icon-aligner.last, .profile-description.last{
+        margin-bottom: auto;
+    }
+    
     .sm-break{
         display: inherit;
     }
