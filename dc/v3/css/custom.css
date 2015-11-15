@@ -51,7 +51,7 @@ a, a:hover{
 }
 
 .section-content{
-    margin: 6em 0 0 0;
+    margin-top: 6em;
 }
 
 .section-heading{
@@ -67,7 +67,7 @@ a, a:hover{
 
 .section-description{
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.25em;
 }
 
 /* INTRO SECTION
@@ -241,6 +241,57 @@ a, a:hover{
     border-top: 1px solid rgb(221, 221, 221);   
 }
 
+.team-content{
+    margin-top: 4em;
+}
+
+.profile-circle{
+    display: inline-block;
+    cursor: pointer;
+    width: 12.5em;
+    height: 12.5em;
+    border-radius: 50%;
+    border: 1px solid rgb(221, 221, 221);
+    display: flex;
+    /* Vertical align: */
+    align-items: center;
+    /* Horizontal align: */
+    justify-content: center;
+    /* Safari: */
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    z-index: 1;
+}
+
+.profile-photo{
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.profile-name{
+    font-family: "DC-Medium";
+    font-size: 1.45em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.profile-role{
+    font-family: "DC-News";
+    font-size: 1.2em;
+    margin-top: 0.2em;
+    margin-bottom: 2.5em;
+    text-align: center;
+}
+
+.profile-description{
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 4em;
+    display: none;
+    opacity: 0.6;
+}
+
 /* JOBS SECTION
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -292,6 +343,22 @@ a, a:hover{
 @media only screen and (min-width : 768px) {
     body{
         font-size: 12px;
+    }
+    
+    .profile-name, .profile-role{
+        text-align: left;
+    }
+    
+    .profile-description{
+        display: inherit;
+    }
+    
+    .profile-name{
+        margin-top: auto;
+    }
+    
+    .profile-role{
+        margin-bottom: 0.8em;
     }
     
 }
