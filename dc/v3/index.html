@@ -423,7 +423,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-2 center">
-                    <a href="#intro">
+                    <a id="back-to-top">
                         <img class="footer-logo center" alt="DC Symbol" src="img/favicon/logo_180.png" width="40em">
                     </a>
                 </div>
@@ -461,6 +461,14 @@ $(window).bind('scroll', function(){
 $("#scroller").click(function() {
     $('html, body').animate({
         scrollTop: $("#help").offset().top,
+        easing: "easein",
+    }, 500);
+});
+    
+    
+$("#back-to-top").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#intro").offset().top,
         easing: "easein",
     }, 500);
 });

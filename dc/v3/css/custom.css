@@ -432,6 +432,9 @@ a, a:hover{
     opacity: 0.1;
 }
 
+#back-to-top{
+    cursor: pointer;
+}
 
 /* MEDIA QUERIES
 -------------------------------------------------- */
