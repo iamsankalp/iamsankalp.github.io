@@ -87,6 +87,7 @@ a, a:hover{
 
 .brand{
     height: 100vh;
+    position: relative;
     display: flex;
     /* Vertical align: */
     align-items: center;
