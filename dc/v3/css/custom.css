@@ -213,6 +213,10 @@ a, a:hover{
     -webkit-justify-content: center;
 }
 
+.icon-circle img{
+    width: 50%;
+}
+
 .help-head{
     font-family: "DC-News";
     font-size: 1.4em;
@@ -310,6 +314,34 @@ a, a:hover{
 
 /* QUOTE SECTION
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#quote{
+    background-color: rgb(255, 255, 255);
+    padding: 6em 0 6em 0;
+    border-top: 1px solid rgb(221, 221, 221);     
+}
+
+.quote-label{
+    color: rgba(46, 48, 61, 0.4);
+    font-size: 1.1em;
+}
+
+.quote-content{
+    margin-top: 2em;
+    padding-left: 4em;
+    border-left: thick solid #303030;
+}
+
+.design-quote{
+    font-size: 2.0em;
+}
+
+.quote-credit{
+    padding-top: 1em;
+    font-family: "DC-News";
+    font-size: 1.2em;
+    color: rgba(46, 48, 61, 0.4);
+}
 
 /* FOOTER SECTION
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
