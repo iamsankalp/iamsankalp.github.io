@@ -51,7 +51,7 @@ a, a:hover{
 }
 
 .section-content{
-    margin: 4em 0 0 0;
+    margin: 6em 0 0 0;
 }
 
 .section-heading{
@@ -192,7 +192,7 @@ a, a:hover{
 }
 
 .help-row-wrapper{
-    margin: 3em 0 0 0;
+    margin-top: 3em;
 }
 
 .icon-circle{
@@ -236,14 +236,18 @@ a, a:hover{
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 #team{
-    
+    background-color: rgb(255, 255, 255);
+    padding: 6em 0 6em 0;
+    border-top: 1px solid rgb(221, 221, 221);   
 }
 
 /* JOBS SECTION
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 #jobs{
-    
+    background-color: rgb(249, 249, 249);
+    padding: 6em 0 6em 0;
+    border-top: 1px solid rgb(221, 221, 221);    
 }
 
 /* LOCATION SECTION
@@ -256,15 +260,17 @@ a, a:hover{
 /* QUOTE SECTION
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-#quote{
-    
-}
-
 /* FOOTER SECTION
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 #footer{
-    
+    background-color: #eaeaea;
+    padding: 1.5em 0 1.5em 0;
+    border-top: 1px solid rgb(221, 221, 221);
+}
+
+.footer-logo{
+    opacity: 0.1;
 }
 
 

@@ -88,7 +88,7 @@
                 
                 <!-- Scroll Indicator -->
                 <div class="scroll-wrapper">
-                    <img class="scroll-arrow center animated slideInDown twice" src="img/down_arrow.svg">
+                    <img class="scroll-arrow center animated slideInDown twice" id="fading" src="img/down_arrow.svg">
                 </div>
             </div>
         </div>
@@ -154,7 +154,7 @@
                                 User Experience
                             </div>
                             <div class="help-description">
-                                We partner with you for the long term so we have a better chance to positively impact your business
+                                We’ll be your customers’ &amp; users’ advocates. We’ll ensure their needs are a guiding light for the product
                             </div>
                         </div>
                     </div>
@@ -169,7 +169,7 @@
                                 Iterations
                             </div>
                             <div class="help-description">
-                                We understand business &amp; technical aspects of products - balancing desirability, feasibility &amp; viability is what we’re good at
+                                We partner with you for the long term so we have a better chance to positively impact your business
                             </div>
                         </div>
                     </div>
@@ -187,7 +187,7 @@
                                 Team Building
                             </div>
                             <div class="help-description">
-                                We partner with you for the long term so we have a better chance to positively impact your business
+                                We can help you recruit the best design &amp; product talent around, so you have a great shot at success
                             </div>
                         </div>
                     </div>
@@ -202,7 +202,7 @@
                                 Culture
                             </div>
                             <div class="help-description">
-                                We understand business &amp; technical aspects of products - balancing desirability, feasibility &amp; viability is what we’re good at
+                                We’ll help you establish a culture of design excellence with a sharp focus on your user
                             </div>
                         </div>
                     </div>
@@ -220,7 +220,7 @@
                 <hr class="section-hr">
                 <div class="row section-description">
                     <div class="col-xs-12 col-sm-11 col-md-10 col-lg-9 center">
-                        As product co-founders we know what it takes to build products that users love. And that’s where we come as partners. As good friends.
+                        Since we are the ones someone can trust upon, some of the already-big &amp; future-big names have partnered with us for a long term. 
                     </div>
                 </div>
             </div>
@@ -229,11 +229,33 @@
     
     <section id="team">
         <div class="container">
+            <div class="section-top">
+                <div class="section-heading center">
+                    OUR TEAM
+                </div>
+                <hr class="section-hr">
+                <div class="row section-description">
+                    <div class="col-xs-12 col-sm-11 col-md-10 col-lg-9 center">
+                        Faces that you recognize. Names that you already know. Our team is a stellar example for team building and we take pride in it.
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
     <section id="jobs">
         <div class="container">
+            <div class="section-top">
+                <div class="section-heading center">
+                    WE ARE HIRING
+                </div>
+                <hr class="section-hr">
+                <div class="row section-description">
+                    <div class="col-xs-12 col-sm-11 col-md-10 col-lg-9 center">
+                        See yourself working with awesome people? We’re looking for talented and passionate product people to join us in our quest to improve the digital landscape.
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -248,17 +270,38 @@
     </section>
     
     <section id="footer">
-        <div class="container">
-        </div>
+        <a href="#intro">
+            <img class="footer-logo center" alt="DC Logo Footer" src="img/favicon/logo_180.png" width="40em">
+        </a>
     </section>
     
     
 <!-- Body Scripts
-––––––––––––––––––––––––––––––––––––––––––––––––––
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script> -->
+<script src="js/bootstrap.min.js"></script>
 <script type="text/javascript">
 
+/* Hiding scroll-arrow on scroll. For use - id=fading */    
+var height = $(window).height();
+var fadeStart=100 // 100px scroll or less will equiv to 1 opacity
+    ,fadeUntil=height // 200px scroll or more will equiv to 0 opacity
+    ,fading = $('#fading')
+;
+
+$(window).bind('scroll', function(){
+    var offset = $(document).scrollTop()
+        ,opacity=0
+    ;
+    if( offset<=fadeStart ){
+        opacity=0.3;
+    }else if( offset<=fadeUntil ){
+        opacity=0.3-offset/fadeUntil;
+    }
+    fading.css('opacity',opacity).html(opacity);
+});
+    
+/* Hiding scroll-arrow on scroll */ 
 </script>
 
 <!-- Document Ends here
