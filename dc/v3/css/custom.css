@@ -8,6 +8,16 @@
     src: url("../fonts/ClanPro-News.otf") format("opentype");
 }
 
+@font-face{
+    font-family: "DC-Medium";
+    src: url("../fonts/ClanPro-Medium.otf") format("opentype");
+}
+
+@font-face{
+    font-family: "DC-CondMedium";
+    src: url("../fonts/ClanPro-CondMedium.otf") format("opentype");
+}
+
 html, body, h1, h2, h3, h4, h5, a, p{
     font-family: "DC-Book", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: normal;
@@ -34,10 +44,38 @@ a, a:hover{
     margin-right: auto !important;
 }
 
-/* INTRO SECTION */
+/* COMMON CSS FOR SECTIONS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.section-top{
+}
+
+.section-content{
+    margin: 4em 0 0 0;
+}
+
+.section-heading{
+    text-align: center;
+    font-size: 1.7em;
+    font-family: "DC-Medium";
+    letter-spacing: -0.02em;
+}
+
+.section-hr{
+    max-width: 50%;
+}
+
+.section-description{
+    text-align: center;
+    font-size: 1.4em;
+}
+
+/* INTRO SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 #intro{
-    background-color: #ECEFF1;
+    background-color: rgb(236, 239, 241);
+    background: linear-gradient(rgb(255, 255, 255), rgb(236, 239, 241));
 }
 
 .brand{
@@ -83,7 +121,7 @@ a, a:hover{
     background-color: rgb(46, 48, 61);
 }
 
-.scroll-box{
+.scroll-wrapper{
     position: absolute;
     bottom: 1em;
     right: 0;
@@ -145,6 +183,94 @@ a, a:hover{
   animation-iteration-count: 2;
 }
 
+/* HELP SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#help{
+    background-color: rgb(255, 255, 255);
+    padding: 6em 0 6em 0;
+}
+
+.help-row-wrapper{
+    margin: 3em 0 0 0;
+}
+
+.icon-circle{
+    display: inline-block;
+    cursor: pointer;
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    border: 1px solid rgb(221, 221, 221);
+    display: flex;
+    /* Vertical align: */
+    align-items: center;
+    /* Horizontal align: */
+    justify-content: center;
+    /* Safari: */
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+}
+
+.help-head{
+    font-family: "DC-News";
+    font-size: 1.4em;
+}
+
+.help-description{
+    font-size: 1.1em;
+    padding: 1em 0 1em 0;
+    line-height: 1.7;
+}
+/* PARTNERS SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#partners{
+    background-color: rgb(249, 249, 249);
+    padding: 6em 0 6em 0;
+    border-top: 1px solid rgb(221, 221, 221);
+}
+
+/* TEAM SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#team{
+    
+}
+
+/* JOBS SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#jobs{
+    
+}
+
+/* LOCATION SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#location{
+    
+}
+
+/* QUOTE SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#quote{
+    
+}
+
+/* FOOTER SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#footer{
+    
+}
+
+
+/* MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : 320px) {
 }
@@ -180,5 +306,5 @@ a, a:hover{
     
 }
 
-@media screen and (orientation:landscape) {
+@media screen and (max-width:768px) {
 }
