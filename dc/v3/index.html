@@ -78,7 +78,7 @@
                 <!-- Get in touch -->
                 <div class="row">
                     <div class="col-xs-7 col-sm-4 col-md-3 col-lg-3 center">
-                        <a href="mailto:contact@designcapital.in">
+                        <a href="mailto:&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#100;&#101;&#115;&#105;&#103;&#110;&#99;&#97;&#112;&#105;&#116;&#97;&#108;&#46;&#105;&#110;">
                             <div class="outline-button">
                                 Get in touch
                             </div>
@@ -224,6 +224,9 @@
                     </div>
                 </div>
             </div>
+            
+            <div class="section-content">
+            </div>
         </div>
     </section>
     
@@ -365,8 +368,8 @@
 
 /* Hiding scroll-arrow on scroll. For use - id=fading */    
 var height = $(window).height();
-var fadeStart=100 // 100px scroll or less will equiv to 1 opacity
-    ,fadeUntil=height // 200px scroll or more will equiv to 0 opacity
+var fadeStart= 100 // 100px scroll or less will equiv to default opacity
+    ,fadeUntil=height // height scroll = 0 opacity
     ,fading = $('#fading')
 ;
 
@@ -379,7 +382,7 @@ $(window).bind('scroll', function(){
     }else if( offset<=fadeUntil ){
         opacity=0.3-offset/fadeUntil;
     }
-    fading.css('opacity',opacity).html(opacity);
+    fading.css('opacity',opacity);
 });
     
 /* Hiding scroll-arrow on scroll */ 
