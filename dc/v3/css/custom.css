@@ -72,6 +72,7 @@ a, a:hover{
 .section-description{
     text-align: center;
     font-size: 1.25em;
+    line-height: 1.7;
 }
 
 /* INTRO SECTION
@@ -193,6 +194,10 @@ a, a:hover{
 
 .help-row-wrapper{
     margin-top: 3em;
+}
+
+.help-icon-aligner{
+    margin-bottom: 3em;
 }
 
 .icon-circle{
@@ -351,7 +356,7 @@ a, a:hover{
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 #footer{
-    background-color: #eaeaea;
+    background-color: rgb(235, 235, 235);
     padding: 1.5em 0 1.5em 0;
     border-top: 1px solid rgb(221, 221, 221);
 }
@@ -379,6 +384,10 @@ a, a:hover{
 @media only screen and (min-width : 768px) {
     body{
         font-size: 12px;
+    }
+    
+    .team-content{
+        margin-top: 6em;
     }
     
     .sm-break{
