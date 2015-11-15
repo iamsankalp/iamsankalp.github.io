@@ -44,6 +44,10 @@ a, a:hover{
     margin-right: auto !important;
 }
 
+.sm-break, .md-break, .lg-break{
+    display: none;
+}
+
 /* COMMON CSS FOR SECTIONS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -100,10 +104,6 @@ a, a:hover{
     line-height: 1.5em;
     text-align: center;
     margin: 1em 0 1.5em 0;
-}
-
-.pitch-break{
-    display: none;
 }
 
 .outline-button{
@@ -215,6 +215,7 @@ a, a:hover{
 
 .icon-circle img{
     width: 50%;
+    width: -moz-available;
 }
 
 .help-head{
@@ -265,12 +266,15 @@ a, a:hover{
     display: -webkit-flex;
     -webkit-align-items: center;
     -webkit-justify-content: center;
-    z-index: 1;
+    display: -moz-flex;
+    -moz-align-items: center;
+    -moz-justify-content: center;
 }
 
 .profile-photo{
     max-width: 100%;
     border-radius: 50%;
+    width: -moz-available;
 }
 
 .profile-name{
@@ -377,6 +381,10 @@ a, a:hover{
         font-size: 12px;
     }
     
+    .sm-break{
+        display: inherit;
+    }
+    
     .profile-name, .profile-role{
         text-align: left;
     }
@@ -393,6 +401,10 @@ a, a:hover{
         margin-bottom: 0.8em;
     }
     
+    .design-quote{
+        line-height: 1.8;
+}
+    
 }
 
 /* Medium Devices, Desktops */
@@ -401,12 +413,20 @@ a, a:hover{
         font-size: 13px;
     }
     
+    .md-break{
+        display: inherit;
+    }
+    
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
     body{
         font-size: 14px;
+    }
+    
+    .lg-break{
+        display: inherit;
     }
     
 }
