@@ -67,7 +67,8 @@ a, a:hover{
 }
 
 .section-hr{
-    max-width: 50%;
+    max-width: 30%;
+    border-top-color: rgb(235, 235, 235);
 }
 
 .section-description{
@@ -128,6 +129,10 @@ a, a:hover{
     bottom: 1em;
     right: 0;
     left: 0;
+}
+
+#scroller{
+    cursor: pointer;
 }
 
 .scroll-arrow{
@@ -243,6 +248,30 @@ a, a:hover{
     border-top: 1px solid rgb(221, 221, 221);
 }
 
+.partner-box{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(221, 221, 221);
+    padding-top: 2em;
+    padding-bottom: 2em;
+    min-height: 15em;
+    display: flex;
+    /* Vertical align: */
+    align-items: center;
+    /* Horizontal align: */
+    justify-content: center;
+    /* Safari: */
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+}
+
+.border-fixer{
+}
+
+.partner-box img{
+    max-width: 70%;
+}
+
 /* TEAM SECTION
 -------------------------------------------------- */
 
@@ -319,14 +348,51 @@ a, a:hover{
 -------------------------------------------------- */
 
 #location{
-    
+    background-color: rgb(255, 255, 255);
+    padding: 6em 0 6em 0;
+    border-top: 1px solid rgb(221, 221, 221);
 }
+
+.divider-left{
+    border-left: 1px solid rgb(221, 221, 221);
+    border-left-width: 10%;
+}
+
+.location-head{
+    text-align: center;
+    font-family: "DC-Medium";
+    font-size: 1.45em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.address{
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 1.0em;
+    margin-bottom: 1.0em; 
+}
+
+/*
+.underline-link{
+    font-family: "DC-News";
+    text-align: center;
+    font-size: 1em;
+    opacity: 0.4;
+    text-decoration: underline;
+}
+
+.unerline-link:hover{
+    opacity: 0.7;
+    transition: opacity 0.5s ease;
+}
+*/
 
 /* QUOTE SECTION
 -------------------------------------------------- */
 
 #quote{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(249, 249, 249);
     padding: 6em 0 6em 0;
     border-top: 1px solid rgb(221, 221, 221);     
 }

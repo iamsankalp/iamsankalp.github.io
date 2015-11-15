@@ -18,6 +18,8 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta name="description" content="" />
     <meta name="author" content="" />
+    
+    <!-- Open Graph & Twitter card images are pending -->
 
     <!-- Verification
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -88,7 +90,9 @@
                 
                 <!-- Scroll Indicator -->
                 <div class="scroll-wrapper">
-                    <img class="scroll-arrow center animated slideInDown twice" id="fading" src="img/down_arrow.svg">
+                    <a id="scroller">
+                        <img class="scroll-arrow center animated slideInDown twice" id="fading" src="img/down_arrow.svg">
+                    </a>
                 </div>
             </div>
         </div>
@@ -169,7 +173,7 @@
                                 Iterations
                             </div>
                             <div class="help-description">
-                                We partner with you for the long term so we have a better chance to positively impact your business
+                                An iterative approach is key to understanding your user better &amp; tweaking the product along the way
                             </div>
                         </div>
                     </div>
@@ -226,6 +230,26 @@
             </div>
             
             <div class="section-content">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4 partner-box border-fixer">
+                        <img alt="OlaCabs" src="img/partner-logo/ola-cabs.png" width="40%">
+                    </div>
+                    <div class="col-xs-6 col-sm-4 partner-box border-fixer">
+                        <img alt="Practo" src="img/partner-logo/logo_practo.png" width="45%">
+                    </div>
+                    <div class="col-xs-6 col-sm-4 partner-box border-fixer">
+                        <img alt="Cleartrip" src="img/partner-logo/logo_cleartrip.png" width="50%">
+                    </div>
+                    <div class="col-xs-6 col-sm-4 partner-box border-fixer">
+                        <img alt="Hoscotch" src="img/partner-logo/hopscotch%20logo.png" width="55%" style="margin-top:-1.8em;">
+                    </div>
+                    <div class="col-xs-6 col-sm-4 partner-box border-fixer">
+                        <img alt="Melorra" src="img/partner-logo/Mellora%20Logo.png" width="55%">
+                    </div>
+                    <div class="col-xs-6 col-sm-4 partner-box border-fixer">
+                        <img alt="TableHero" src="img/partner-logo/logo_tablehero.png" width="55%">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -325,6 +349,54 @@
     </section>
     
     <section id="location">
+        <div class="container">
+            <div class="section-top">
+                <div class="section-heading center">
+                    WE ARE IN
+                </div>
+                <hr class="section-hr">
+                <div class="row section-description">
+                    <div class="col-xs-11 col-sm-11 col-md-10 col-lg-9 center">
+                        2 amazing cities. <br class="sm-break"> Beautiful offices that you’ll fall in love with at first sight.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="location-head">
+                            Mumbai
+                        </div>
+                        <div class="address">
+                            Matrix Partners India<br>
+                            197, 6th Main, 1st Crosss<br>
+                            Bengaluru - 560038
+                        </div>
+                        <!--
+                        <div class="underline-link">
+                            <a href="#">Check in Google Maps</a>
+                        </div>
+                        -->
+                    </div>
+                    <div class="col-xs-6 divider-left">
+                        <div class="location-head">
+                            Bengaluru
+                        </div>
+                        <div class="address">
+                            Matrix Partners India<br>
+                            197, 6th Main, 1st Crosss<br>
+                            Bengaluru - 560038
+                        </div>
+                        <!--
+                        <div class="underline-link">
+                            <a href="#">Check in Google Maps</a>
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     
     <section id="quote">
@@ -385,7 +457,13 @@ $(window).bind('scroll', function(){
     fading.css('opacity',opacity);
 });
     
-/* Hiding scroll-arrow on scroll */ 
+/* Just in case someone clicks on the arrow */    
+$("#scroller").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#help").offset().top,
+        easing: "easein",
+    }, 500);
+});
 </script>
 
 <!-- Document Ends here
