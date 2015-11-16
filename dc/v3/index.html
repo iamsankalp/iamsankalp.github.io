@@ -350,10 +350,10 @@
                     </div>
                     <div class="quote-content">
                         <div class="design-quote">
-                            Perfection is achieved not when there is nothing more to add, <br class="sm-break"> but when there is nothing left to take away.
+                            <span id="today-quote">Perfection is achieved not when there is nothing more to add, <br class="sm-break"> but when there is nothing left to take away.</span>
                         </div>
                         <div class="quote-credit">
-                            - ANTOINE DE SAINT-EXUPERY
+                            - <span id="today-credit">ANTOINE DE SAINT-EXUPERY</span>
                         </div>
                     </div>
                 </div>
@@ -423,6 +423,83 @@ $(window).scroll(function() {
         $fab.addClass("slideInUp");
     }
 });
+
+var day = new Date();
+var today = day.getDay();
+    
+if (today == 0)
+    {
+        $("#today-quote").text('Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away.');
+        $("#today-credit").text('ANTOINE DE SAINT-EXUPERY');
+    }
+if (today == 1)
+    {
+        $("#today-quote").text('Design is not just what it looks like and feels like. Design is how it works.');
+        $("#today-credit").text('Steve Jobs');
+    }
+if (today == 2)
+    {
+        $("#today-quote").text('Good design is making something intelligible and memorable. Great design is making something memorable and meaningful.');
+        $("#today-credit").text('Dieter Rams');
+    }
+if (today == 3)
+    {
+        $("#today-quote").text('Design is a plan for arranging elements in such a way as best to accomplish a particular purpose.');
+        $("#today-credit").text('Charles Eames');
+    }
+if (today == 4)
+    {
+        $("#today-quote").text('Good design is all about making other designers feel like idiots because that idea wasn’t theirs.');
+        $("#today-credit").text('Frank Chimero');
+    }
+if (today == 5)
+    {
+        $("#today-quote").text('I strive for two things in design: simplicity and clarity. Great design is born of those two things.');
+        $("#today-credit").text('Lindon Leader');
+    }
+if (today == 6)
+    {
+        $("#today-quote").text('Good design goes to heaven; bad design goes everywhere.');
+        $("#today-credit").text('Mieke Gerritzen');
+    }
+    
+/* 
+$(document).ready(function(){
+var d = new Date();
+var day = d.getDate();
+});
+    
+var d = new Date();
+var weekday = new Array(7);
+weekday[0]=  "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
+
+var n = weekday[d.getDay()];
+    
+    
+    
+    
+    
+var textArray = [
+    '1',
+    '2',
+    '3',
+    '4',
+    '5',
+    '6',
+    '7',
+    '8'
+    
+];
+var randomNumber = Math.floor(Math.random()*textArray.length);
+$("#today-quote").text(textArray[randomNumber]);
+
+*/
 </script>
 
 <!-- Document Ends here

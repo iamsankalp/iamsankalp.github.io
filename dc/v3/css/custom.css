@@ -497,6 +497,7 @@ a, a:hover{
     font-family: "DC-News";
     font-size: 1.2em;
     color: rgba(46, 48, 61, 0.4);
+    text-transform: uppercase;
 }
 
 /* FOOTER SECTION
