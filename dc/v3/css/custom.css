@@ -152,6 +152,8 @@ a, a:hover{
 -------------------------------------------------- */
 
 #intro{
+    background: rgb(255, 255, 255);
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(236, 239, 241));
     background: linear-gradient(rgb(255, 255, 255), rgb(236, 239, 241));
 }
 
@@ -170,7 +172,7 @@ a, a:hover{
 }
 
 .logo{
-    width: 30em;
+    width: 28em;
 }
 
 .pitch{
@@ -479,7 +481,7 @@ a, a:hover{
 
 .quote-label{
     color: rgba(46, 48, 61, 0.4);
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 .quote-content{
