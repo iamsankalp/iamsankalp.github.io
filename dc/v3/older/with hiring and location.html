@@ -63,11 +63,12 @@
 
     <!-- Primary Page Layout
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    
     <section id="intro">
         <div class="brand">
             <div class="container">
                 <!-- Logo -->
-                <img alt="Design Capital Logo" class="logo center" src="img/logo_dc.svg">
+                <img alt="Design Capital Logo" class="logo center" src="img/logo_dc_3.svg">
                 
                 <!-- Pitch Text -->
                 <div class="row">
@@ -76,7 +77,7 @@
                     </div>
                 </div>
                 
-                <!-- Get in touch
+                <!-- Get in touch -->
                 <div class="row">
                     <div class="col-xs-7 col-sm-4 col-md-3 col-lg-3 center">
                         <a href="mailto:&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#100;&#101;&#115;&#105;&#103;&#110;&#99;&#97;&#112;&#105;&#116;&#97;&#108;&#46;&#105;&#110;">
@@ -86,25 +87,12 @@
                         </a>                    
                     </div>
                 </div>
-
-                 -->
-                
-                <a href="mailto:&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#100;&#101;&#115;&#105;&#103;&#110;&#99;&#97;&#112;&#105;&#116;&#97;&#108;&#46;&#105;&#110;&#63;&#115;&#117;&#98;&#106;&#101;&#99;&#116;&#61;&#72;&#101;&#121;&#33;">
-                    <div class="fab animated-quick">
-                        <img src="img/icons/mail.svg">
-                    </div>
-                </a>
                 
                 <!-- Scroll Indicator -->
                 <div class="scroll-wrapper">
-                    <div id="fading">
-                        <a id="scroller">
-                            <div class="scroll-text center">
-                                See how we can help
-                            </div>
-                            <img class="scroll-arrow center animated slideInDown twice" id="fading" src="img/down_arrow.svg">
-                        </a>
-                    </div>
+                    <a id="scroller">
+                        <img class="scroll-arrow center animated slideInDown twice" id="fading" src="img/down_arrow.svg">
+                    </a>
                 </div>
             </div>
         </div>
@@ -341,16 +329,118 @@
         </div>
     </section>
     
+    <section id="jobs">
+        <div class="container">
+            <div class="section-top">
+                <div class="section-heading center">
+                    WE ARE HIRING
+                </div>
+                <hr class="section-hr">
+                <div class="row section-description">
+                    <div class="col-xs-11 col-sm-11 col-md-10 col-lg-9 center">
+                        See yourself working with awesome people? We’re looking for <br class="sm-break"> talented and passionate product people to join us in our quest to improve the digital landscape.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-3">
+                                1
+                            </div>
+                            <div class="col-xs-12 col-sm-7">
+                                <div class="xol-xs-12">
+                                    2
+                                </div>
+                                <div class="xol-xs-12">
+                                    3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-3">
+                                4
+                            </div>
+                            <div class="col-xs-12 col-sm-7">
+                                <div class="xol-xs-12">
+                                    5
+                                </div>
+                                <div class="xol-xs-12">
+                                    6
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="location">
+        <div class="container">
+            <div class="section-top">
+                <div class="section-heading center">
+                    WE ARE IN
+                </div>
+                <hr class="section-hr">
+                <div class="row section-description">
+                    <div class="col-xs-11 col-sm-11 col-md-10 col-lg-9 center">
+                        2 amazing cities. <br class="sm-break"> Beautiful offices that you’ll fall in love with at first sight.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="location-head">
+                            Mumbai
+                        </div>
+                        <div class="address">
+                            Matrix Partners India<br>
+                            197, 6th Main, 1st Crosss<br>
+                            Bengaluru - 560038
+                        </div>
+                        <!--
+                        <div class="underline-link">
+                            <a href="#">Check in Google Maps</a>
+                        </div>
+                        -->
+                    </div>
+                    <div class="col-xs-6 divider-left">
+                        <div class="location-head">
+                            Bengaluru
+                        </div>
+                        <div class="address">
+                            Matrix Partners India<br>
+                            197, 6th Main, 1st Crosss<br>
+                            Bengaluru - 560038
+                        </div>
+                        <!--
+                        <div class="underline-link">
+                            <a href="#">Check in Google Maps</a>
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <section id="quote">
         <div class="container">
             <div class="row">
-                <div class="col-xs-11 col-sm-9 center">
+                <div class="col-xs-11 col-sm-10 center">
                     <div class="quote-label">
                         Design quote of the day
                     </div>
                     <div class="quote-content">
                         <div class="design-quote">
-                            Perfection is achieved not when there is nothing more to add, <br class="sm-break"> but when there is nothing left to take away.
+                            Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away.
                         </div>
                         <div class="quote-credit">
                             - ANTOINE DE SAINT-EXUPERY
@@ -383,7 +473,7 @@
 /* Hiding scroll-arrow on scroll. For use - id=fading */    
 var height = $(window).height();
 var fadeStart= 100 // 100px scroll or less will equiv to default opacity
-    ,fadeUntil=300 // height scroll = 0 opacity
+    ,fadeUntil=height // height scroll = 0 opacity
     ,fading = $('#fading')
 ;
 
@@ -392,9 +482,9 @@ $(window).bind('scroll', function(){
         ,opacity=0
     ;
     if( offset<=fadeStart ){
-        opacity=1;
+        opacity=0.3;
     }else if( offset<=fadeUntil ){
-        opacity=1-offset/fadeUntil;
+        opacity=0.3-offset/fadeUntil;
     }
     fading.css('opacity',opacity);
 });
@@ -413,15 +503,6 @@ $("#back-to-top").click(function() {
         scrollTop: $("#intro").offset().top,
         easing: "easein",
     }, 500);
-});
-    
-$(window).scroll(function() {    
-    var scroll = $(window).scrollTop();
-    var $fab = $('.fab');
-    if (scroll >= 350) {
-        $fab.css({display: "flex"});
-        $fab.addClass("slideInUp");
-    }
 });
 </script>
 

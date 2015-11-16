@@ -14,9 +14,14 @@
 }
 
 @font-face{
+    font-family: "DC-Quote";
+    src: url("../fonts/ff-tisa-web-pro.woff");
+}
+
+/* @font-face{
     font-family: "DC-CondMedium";
     src: url("../fonts/ClanPro-CondMedium.otf") format("opentype");
-}
+}*/
 
 html, body, h1, h2, h3, h4, h5, a, p{
     font-family: "DC-Book", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -77,11 +82,76 @@ a, a:hover{
     line-height: 1.7;
 }
 
+/* FAB
+-------------------------------------------------- */
+.fab{
+    z-index: 999;
+    position: fixed;
+    right: 1.6em;
+    bottom: 1.6em;
+    border-radius: 50%;
+    width: 4.8em;
+    height: 4.8em;
+    background: rgb(46, 48, 61);
+    box-shadow: 0px 1px 2px 0px rgba(179,179,179,0.50), 0px 2px 4px 0px rgba(114,114,114,0.50);
+    display: flex;
+    /* Vertical align: */
+    align-items: center;
+    /* Horizontal align: */
+    justify-content: center;
+    /* Safari: */
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    display: none;
+}
+
+.fab img{
+    max-width: 50%;
+}
+
+.animated-quick {
+  -webkit-animation-duration: 0.6s;
+  animation-duration: 0.6s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+
 /* INTRO SECTION
 -------------------------------------------------- */
 
 #intro{
-    background-color: rgb(236, 239, 241);
     background: linear-gradient(rgb(255, 255, 255), rgb(236, 239, 241));
 }
 
@@ -100,7 +170,7 @@ a, a:hover{
 }
 
 .logo{
-    width: 20em;
+    width: 30em;
 }
 
 .pitch{
@@ -127,9 +197,15 @@ a, a:hover{
 
 .scroll-wrapper{
     position: absolute;
-    bottom: 1em;
     right: 0;
     left: 0;
+}
+
+.scroll-text{
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 1em;
+    opacity: 0.4;
 }
 
 #scroller{
@@ -138,7 +214,7 @@ a, a:hover{
 
 .scroll-arrow{
     width: 1.2em;
-    opacity: 0.3;
+    opacity: 0.25;
     position: relative;
 }
 
@@ -195,7 +271,7 @@ a, a:hover{
 -------------------------------------------------- */
 
 #help{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(249, 249, 249);
     padding: 6em 0 6em 0;
 }
 
@@ -233,18 +309,20 @@ a, a:hover{
 .help-head{
     font-family: "DC-News";
     font-size: 1.4em;
+/*    text-align: center; */
 }
 
 .help-description{
     font-size: 1.1em;
     padding: 1em 0 1em 0;
     line-height: 1.7;
+ /*   display: none; */
 }
 /* PARTNERS SECTION
 -------------------------------------------------- */
 
 #partners{
-    background-color: rgb(249, 249, 249);
+    background-color: rgb(255, 255, 255);
     padding: 6em 0 6em 0;
     border-top: 1px solid rgb(221, 221, 221);
 }
@@ -277,7 +355,7 @@ a, a:hover{
 -------------------------------------------------- */
 
 #team{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(249, 249, 249);
     padding: 6em 0 6em 0;
     border-top: 1px solid rgb(221, 221, 221);   
 }
@@ -340,7 +418,7 @@ a, a:hover{
 -------------------------------------------------- */
 
 #jobs{
-    background-color: rgb(249, 249, 249);
+    background-color: rgb(255, 255, 255);
     padding: 6em 0 6em 0;
     border-top: 1px solid rgb(221, 221, 221);    
 }
@@ -349,7 +427,7 @@ a, a:hover{
 -------------------------------------------------- */
 
 #location{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(249, 249, 249);
     padding: 6em 0 6em 0;
     border-top: 1px solid rgb(221, 221, 221);
 }
@@ -393,7 +471,7 @@ a, a:hover{
 -------------------------------------------------- */
 
 #quote{
-    background-color: rgb(249, 249, 249);
+    background-color: rgb(255, 255, 255);
     padding: 6em 0 6em 0;
     border-top: 1px solid rgb(221, 221, 221);     
 }
@@ -410,6 +488,7 @@ a, a:hover{
 }
 
 .design-quote{
+    font-family: "DC-Quote";
     font-size: 2.0em;
 }
 
@@ -459,6 +538,14 @@ a, a:hover{
     
     .team-content{
         margin-top: 6em;
+    }
+    
+    .help-head{
+        text-align: left;
+    }
+    
+    .help-description{
+        display: inherit;
     }
     
     .help-icon-aligner.last, .profile-description.last{
