@@ -303,6 +303,7 @@ a, a:hover{
 
 .icon-circle img{
     width: 50%;
+    height: 50%;
     width: -moz-available;
 }
 
