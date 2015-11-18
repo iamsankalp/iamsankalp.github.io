@@ -324,7 +324,6 @@ a, a:hover{
 
 .icon-circle{
     display: inline-block;
-    cursor: pointer;
     width: 8em;
     height: 8em;
     border-radius: 50%;
@@ -527,6 +526,34 @@ a, a:hover{
     border-top: 1px solid rgb(221, 221, 221);    
 }
 
+#hiring-block{
+    padding: 3em 1.5em 3em 1.5em;
+}
+
+.jobs-icon-wrapper{
+    min-height: 10em;
+    display: flex;
+    /* Vertical align: */
+    align-items: center;
+    /* Horizontal align: */
+    justify-content: center;
+    /* Safari: */
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    display: -moz-flex;
+    -moz-align-items: center;
+    -moz-justify-content: center;
+}
+
+#partner-companies-icon{
+    min-width: 7.5em;
+}
+
+#dc-logo-symbol{
+    min-width: 9em;
+}
+
 /* LOCATION SECTION
 -------------------------------------------------- */
 
@@ -688,6 +715,10 @@ a, a:hover{
     
     .profile-role{
         margin-bottom: 0.8em;
+    }
+    
+    #hiring-block:hover{
+        background: rgb(249, 249, 249);
     }
     
     .design-quote{
