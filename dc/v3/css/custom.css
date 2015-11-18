@@ -138,6 +138,11 @@ a, a:hover{
     display: none;
 }
 
+.fab:hover{
+    box-shadow: 0px 1px 2px 1px rgba(179,179,179,0.50), 0px 2px 4px 1px rgba(114,114,114,0.50);
+    background: rgb(54, 56, 70);
+}
+
 .fab img{
     max-width: 50%;
 }
@@ -387,7 +392,6 @@ a, a:hover{
 .partner-invite{
     margin-top: 4em;
     background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(221, 221, 221);
     padding-top: 2em;
     padding-bottom: 2em;
     min-height: 6em;
@@ -425,7 +429,9 @@ a, a:hover{
     background: rgba(255, 255, 255, 0.9);
     display: none;
     width: 100%;
-    height: 100%;
+    height: 100%;    
+    opacity: 0;
+    overflow: hidden;
 }
 
 .partner-description{
@@ -433,6 +439,7 @@ a, a:hover{
     font-size: 1.25em;
     line-height: 1.5;
     padding: 1.5em;
+    overflow: hidden;
 }
 
 .partner-industry{
@@ -445,6 +452,7 @@ a, a:hover{
     padding: 1em;
     opacity: 0.6; 
     font-size: 1.2em;
+    overflow: hidden;
 }
 
 /* TEAM SECTION
@@ -637,6 +645,11 @@ a, a:hover{
         margin-top: 6em;
     }
     
+    .icon-circle:hover {
+        transition: 0.75s ease;
+        border: 1px solid rgb(181, 181, 181);
+    }
+    
     .help-head{
         text-align: left;
     }
@@ -658,6 +671,9 @@ a, a:hover{
         border-bottom: 1px solid rgb(221, 221, 221) !important;
     }
     
+    .partner-invite{
+        border: 1px solid rgb(221, 221, 221);        
+    }
     .profile-name, .profile-role{
         text-align: left;
     }
@@ -690,7 +706,8 @@ a, a:hover{
     }
     
     .partner-box:hover .partner-hover{
-            display: block;
+        opacity: 1;
+        display: block;
     }
     
     .partner-box:hover img{
