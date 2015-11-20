@@ -131,7 +131,7 @@ a, a:hover{
     align-items: center;
     /* Horizontal align: */
     justify-content: center;
-    /* Safari: */
+    /* Safari */
     display: -webkit-flex;
     -webkit-align-items: center;
     -webkit-justify-content: center;
@@ -202,7 +202,7 @@ a, a:hover{
     align-items: center;
     /* Horizontal align: */
     justify-content: center;
-    /* Safari: */
+    /* Safari */
     display: -webkit-flex;
     -webkit-align-items: center;
     -webkit-justify-content: center;
@@ -334,7 +334,7 @@ a, a:hover{
     align-items: center;
     /* Horizontal align: */
     justify-content: center;
-    /* Safari: */
+    /* Safari */
     display: -webkit-flex;
     -webkit-align-items: center;
     -webkit-justify-content: center;
@@ -379,7 +379,7 @@ a, a:hover{
     align-items: center;
     /* Horizontal align: */
     justify-content: center;
-    /* Safari: */
+    /* Safari */
     display: -webkit-flex;
     -webkit-align-items: center;
     -webkit-justify-content: center;
@@ -399,7 +399,7 @@ a, a:hover{
     align-items: center;
     /* Horizontal align: */
     justify-content: center;
-    /* Safari: */
+    /* Safari */
     display: -webkit-flex;
     -webkit-align-items: center;
     -webkit-justify-content: center;
@@ -425,7 +425,7 @@ a, a:hover{
     top: 0;
     left: 0;
     z-index: 10;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.98);
     width: 100%;
     height: 100%;    
     opacity: 0;
@@ -469,9 +469,8 @@ a, a:hover{
 
 .profile-circle{
     display: inline-block;
-    cursor: pointer;
-    width: 12.5em;
-    height: 12.5em;
+    width: 9em;
+    height: 9em;
     border-radius: 50%;
     border: 1px solid rgb(221, 221, 221);
     display: flex;
@@ -479,7 +478,7 @@ a, a:hover{
     align-items: center;
     /* Horizontal align: */
     justify-content: center;
-    /* Safari: */
+    /* Safari */
     display: -webkit-flex;
     -webkit-align-items: center;
     -webkit-justify-content: center;
@@ -492,29 +491,69 @@ a, a:hover{
     max-width: 100%;
     border-radius: 50%;
     width: -moz-available;
+    overflow: hidden;
 }
 
 .profile-name{
     font-family: "DC-Medium";
     font-size: 1.45em;
-    text-align: center;
-    margin-top: 1em;
 }
 
 .profile-role{
     font-family: "DC-News";
     font-size: 1.2em;
     margin-top: 0.2em;
-    margin-bottom: 2.5em;
-    text-align: center;
 }
 
 .profile-description{
-    font-size: 1.1em;
+    margin-top: 0.5em;
+    font-size: 1.2em;
     line-height: 1.6;
-    margin-bottom: 4em;
-    display: none;
     opacity: 0.6;
+}
+
+.social-wrapper{
+    margin-top: 0.8em;
+    margin-bottom: 4em;
+}
+
+.social-wrapper.last{
+    margin-bottom: auto !important;
+}
+
+.profile-social-circle{
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    border: 1px solid rgb(221, 221, 221);
+    display: inline-flex;
+    /* Vertical align: */
+    align-items: center;
+    /* Horizontal align: */
+    justify-content: center;
+    /* Safari */
+    display: -webkit-inline-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    display: -moz-inline-flex;
+    -moz-align-items: center;
+    -moz-justify-content: center;    
+}
+
+.profile-social-circle img{
+    width: 50%;
+    height: 50%;
+}
+
+.profile-social-twitter{
+    opacity: 0.4;
+    width: 1.8em;
+    margin-right: 1em;
+}
+
+.profile-social-linkedin{
+    opacity: 0.4;
+    width: 1.8em;
 }
 
 /* JOBS SECTION
@@ -537,7 +576,7 @@ a, a:hover{
     align-items: center;
     /* Horizontal align: */
     justify-content: center;
-    /* Safari: */
+    /* Safari */
     display: -webkit-flex;
     -webkit-align-items: center;
     -webkit-justify-content: center;
@@ -705,24 +744,35 @@ a, a:hover{
         border: 1px solid rgb(221, 221, 221); 
         padding-bottom: 2em;       
     }
-    .profile-name, .profile-role{
-        text-align: left;
+    
+    .profile-circle{
+        width: 12.5em;
+        height: 12.5em;
+    }
+    .profile-name, .profile-role, .profile-description{
+        text-align: center;
     }
     
     .profile-description{
-        display: inherit;
+        padding-left: 1em;
+        padding-right: 1em;
     }
     
     .profile-name{
-        margin-top: auto;
-    }
-    
-    .profile-role{
-        margin-bottom: 0.8em;
+        margin-top: 1em;
     }
     
     .design-quote{
         line-height: 1.8;
+    }
+    .social-wrapper{
+        text-align: center;
+        margin-bottom: auto;
+    }
+    
+    .profile-social-twitter:hover, .profile-social-linkedin:hover{
+        transition: opacity 0.5s ease;
+        opacity: 0.8;
     }
 }
 
@@ -737,14 +787,9 @@ a, a:hover{
     }
     
     .partner-box:hover .partner-hover{
-        transition: opacity 0.75s ease;
+        transition: opacity 0.5s ease;
         opacity: 1;
         display: block;
-    }
-    
-    .partner-box:hover img{
-        -webkit-filter: blur(5px);
-        filter: blur(5px);
     }
     
     .partner-box{
