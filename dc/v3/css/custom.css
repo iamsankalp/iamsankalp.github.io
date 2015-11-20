@@ -236,6 +236,7 @@ a, a:hover{
 
 .scroll-wrapper{
     position: absolute;
+    bottom: 2.5em;
     right: 0;
     left: 0;
 }
@@ -426,11 +427,11 @@ a, a:hover{
     left: 0;
     z-index: 10;
     background: rgba(255, 255, 255, 0.9);
-    display: none;
     width: 100%;
     height: 100%;    
     opacity: 0;
     overflow: hidden;
+/*    display: none; */
 }
 
 .partner-description{
@@ -717,10 +718,6 @@ a, a:hover{
         margin-bottom: 0.8em;
     }
     
-    #hiring-block:hover{
-        background: rgb(249, 249, 249);
-    }
-    
     .design-quote{
         line-height: 1.8;
     }
@@ -737,6 +734,7 @@ a, a:hover{
     }
     
     .partner-box:hover .partner-hover{
+        transition: opacity 0.75s ease;
         opacity: 1;
         display: block;
     }
