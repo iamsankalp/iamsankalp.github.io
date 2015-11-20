@@ -37,8 +37,8 @@ a:hover, a:visited, a:link, a:active{
     text-decoration: none;
 }
 
-a, a:hover{
-    color: inherit;
+a, a:hover, a:visited{
+    color: rgb(46, 48, 61);
 }
 
 .center{
@@ -431,6 +431,7 @@ a, a:hover{
     opacity: 0;
     overflow: hidden;
 /*    display: none; */
+    visibility: hidden;
 }
 
 .partner-description{
@@ -548,7 +549,7 @@ a, a:hover{
 .profile-social-twitter{
     opacity: 0.4;
     width: 1.8em;
-    margin-right: 1em;
+    margin-right: 1.5em;
 }
 
 .profile-social-linkedin{
@@ -591,6 +592,50 @@ a, a:hover{
 
 #dc-logo-symbol{
     min-width: 9em;
+}
+
+
+/* JOB LISTINGS SECTION
+-------------------------------------------------- */
+#job-listing{
+    background-color: rgb(245, 245, 245);
+    padding: 6em 0 6em 0;
+    box-shadow: inset 0px 2px 4px 0px rgba(218,218,218,0.50);
+}
+
+.listing-section-title{
+    display: inline;
+}
+
+.listing-close-button{
+    position: absolute;
+    right: 0;
+    padding-right: 2em;
+    opacity: 0.4;
+}
+
+.listing-close-button img{
+    width: 0.5em;
+}
+
+.partner-title{
+    
+}
+
+.job-item{
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 3px;
+    padding: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.job-title, .job-label{
+    display: inline;
+}
+
+.job-description{
+    
 }
 
 /* LOCATION SECTION
@@ -641,7 +686,7 @@ a, a:hover{
 -------------------------------------------------- */
 
 #quote{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(249, 249, 249);
     padding: 6em 0 6em 0;
     border-top: 1px solid rgb(221, 221, 221);     
 }
@@ -754,18 +799,20 @@ a, a:hover{
     }
     
     .profile-description{
+        margin-top: 0.8em;
         padding-left: 1em;
         padding-right: 1em;
     }
     
     .profile-name{
-        margin-top: 1em;
+        margin-top: 1.5em;
     }
     
     .design-quote{
         line-height: 1.8;
     }
     .social-wrapper{
+        margin-top: 1.5em;
         text-align: center;
         margin-bottom: auto;
     }
@@ -787,9 +834,10 @@ a, a:hover{
     }
     
     .partner-box:hover .partner-hover{
-        transition: opacity 0.5s ease;
+        transition: visibility 0s, opacity 0.5s ease;
         opacity: 1;
         display: block;
+        visibility: visible;
     }
     
     .partner-box{
