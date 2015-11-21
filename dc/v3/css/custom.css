@@ -220,6 +220,7 @@ a, a:hover, a:visited{
 }
 
 .outline-button{
+    cursor: pointer;
     height: 3.539em;
     padding: 1em; 
     text-align: center;
@@ -597,7 +598,7 @@ a, a:hover, a:visited{
 
 /* JOB LISTINGS SECTION
 -------------------------------------------------- */
-#job-listing{
+#job-listing-partner, #job-listing-dc{
     display: none;
     background-color: rgb(245, 245, 245);
     padding: 6em 0 6em 0;
