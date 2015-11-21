@@ -562,7 +562,7 @@
                         
                         <div class="row">
                             <div class="col-xs-12 col-sm-8 center">
-                                <a href="mailto:partnership@designcapital.in">
+                                <a id="partner-jobs">
                                     <div class="outline-button partner-button">
                                         <span class="hidden-xs">Jobs</span> With Partners
                                     </div>
@@ -577,9 +577,9 @@
                         
                         <div class="row">
                             <div class="col-xs-12 col-sm-8 center">
-                                <a href="mailto:partnership@designcapital.in">
+                                <a id="dc-jobs">
                                     <div class="outline-button partner-button">
-                                        <span class="hidden-xs">Jobs</span> With Us
+                                        <span class="hidden-xs">Jobs</span> With <span class="hidden-xs">Design Capital</span><span class="visible-xs">DC</span>
                                     </div>
                                 </a>  
                             </div>
@@ -594,9 +594,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-10 center">
-                    <h3 class="listing-section-title">Ignore for now</h3>
-                    <img class="listing-close-button" src="img/icons/close.svg">
-                    <hr>
+                    <h3 class="listing-section-title">Jobs with Partners</h3>
+                    <img id="close-listing" class="listing-close-button" src="img/icons/close.svg">
+                    <hr class="listing-break">
                 </div>
             </div>
             
@@ -604,24 +604,89 @@
                 <div class="col-xs-10 center">
                     <div class="partner-title">Olacabs</div>
                     <div class="job-item">
-                        <h5 class="job-title">dkfhdkjhf
+                        <h5 class="job-title">Product Designer
                         </h5>
-                        <div class="job-label">dkjdhjkhds
+                        <div class="job-label">2 yr experience
                         </div>
-                        <div class="job-description">dfdskjhfkjh
+                        <div class="row">
+                            <div class="col-xs-10">
+                                <div class="job-description">Write a problem that you find in Ola Store app and how you’d design it better.
+        And, don’t forget to link your portfolio too.
+                                </div>
+                            </div>
+                            <div class="col-xs-2">
+                                <div class="job-item-cta">
+                                    <a href="#" class="">Apply</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
                     <div class="job-item">
-                        <h5 class="job-title">dkfhdkjhf
+                        <h5 class="job-title">Product Designer
                         </h5>
-                        <div class="job-label">dkjdhjkhds
+                        <div class="job-label">2 yr experience
                         </div>
-                        <div class="job-description">dfdskjhfkjh
+                        <div class="row">
+                            <div class="col-xs-10">
+                                <div class="job-description">Write a problem that you find in Ola Store app and how you’d design it better.
+        And, don’t forget to link your portfolio too.
+                                </div>
+                            </div>
+                            <div class="col-xs-2">
+                                <div class="job-item-cta">
+                                    <a href="#" class="">Apply</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="job-item">
+                        <h5 class="job-title">Product Designer
+                        </h5>
+                        <div class="job-label">2 yr experience
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-10">
+                                <div class="job-description">Write a problem that you find in Ola Store app and how you’d design it better.
+        And, don’t forget to link your portfolio too.
+                                </div>
+                            </div>
+                            <div class="col-xs-2">
+                                <div class="job-item-cta">
+                                    <a href="#" class="">Apply</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="partner-title">Olacabs</div>
+                    <div class="job-item">
+                        <h5 class="job-title">Product Designer
+                        </h5>
+                        <div class="job-label">2 yr experience
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-10">
+                                <div class="job-description">Write a problem that you find in Ola Store app and how you’d design it better.
+        And, don’t forget to link your portfolio too.
+                                </div>
+                            </div>
+                            <div class="col-xs-2">
+                                <div class="job-item-cta">
+                                    <a href="#" class="">Apply</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    
+    <section id="partner-listing-mobile">
+        <div class="container mobile-listing-background">
+            kdsfhgkjdh
         </div>
     </section>
     
@@ -663,6 +728,17 @@
 <script src="js/jquery.min.js"></script>
 <!-- <script src="js/bootstrap.min.js"></script> -->
 <script type="text/javascript">
+$('#partner-jobs').click(function(){
+    $('#job-listing').slideDown();
+});
+
+$('#dc-jobs').click(function(){
+    $('#job-listing').slideDown();
+});
+    
+$('#close-listing').click(function(){
+    $('#job-listing').slideUp();
+});
 
 /* Hiding scroll-arrow on scroll. For use - id=fading */    
 /*var height = $(window).height();
