@@ -245,7 +245,7 @@ a, a:hover, a:visited{
 }
 
 .scroll-text{
-    font-size: 1.2em;
+    font-size: 1.25em;
     text-align: center;
     margin-bottom: 1em;
     opacity: 0.4;
@@ -438,7 +438,7 @@ a, a:hover, a:visited{
 }
 
 .partner-invite-text{
-    font-size: 1.2em;
+    font-size: 1.25em;
     padding-top: 1em;
     line-height: 1.7;
 }
@@ -529,14 +529,14 @@ a, a:hover, a:visited{
 
 .profile-role{
     font-family: "DC-News";
-    font-size: 1.2em;
+    font-size: 1.25em;
     margin-top: 0.2em;
     opacity: 0.8;
 }
 
 .profile-description{
     margin-top: 0.5em;
-    font-size: 1.2em;
+    font-size: 1.25em;
     line-height: 1.6;
     opacity: 0.6;
 }
@@ -771,7 +771,7 @@ a, a:hover, a:visited{
 
 .quote-label{
     color: rgba(46, 48, 61, 0.4);
-    font-size: 1.2em;
+    font-size: 1.25em;
 }
 
 .quote-content{
