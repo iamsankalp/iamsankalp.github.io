@@ -663,10 +663,6 @@ a, a:hover, a:visited{
     margin-bottom: 2em;
 }
 
-.job-title, .job-label{
-    display: inline;
-}
-
 .job-title{
     font-family: "DC-News";
     font-size: 1.4em;
@@ -674,7 +670,6 @@ a, a:hover, a:visited{
 
 .job-label{
     font-size: 1.1em;
-    padding-left: 1em;
     opacity: 0.6;
 }
 
@@ -684,13 +679,15 @@ a, a:hover, a:visited{
     font-size: 1.1em;
     line-height: 1.5;
     opacity: 0.6;
+    display: none;
 }
 
 .job-item-cta{
     text-align: center;
     padding: 1em;
     font-size: 1.1em;
-    font-family: "DC-News"
+    font-family: "DC-News";
+    display: none;
 }
 
 #partner-listing-mobile{
@@ -921,6 +918,18 @@ a, a:hover, a:visited{
     .profile-social-twitter:hover, .profile-social-linkedin:hover{
         transition: opacity 0.5s ease;
         opacity: 0.8;
+    }
+
+    .job-title, .job-label{
+        display: inline;
+    }
+    
+    .job-label{
+        padding-left: 1em;
+    }
+    
+    .job-item-cta, .job-description{
+        display: inherit;
     }
 }
 
