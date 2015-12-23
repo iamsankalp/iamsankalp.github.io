@@ -1,0 +1,57 @@
+@font-face{
+    font-family: "m-serif";
+    src: url("../fonts/Didot-HTF-M42-Medium.otf") format("opentype");
+}
+
+@font-face{
+    font-family: "m-book";
+    src: url("../fonts/gotham-book-webfont.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "m-medium";
+    src: url("../fonts/Gotham-Medium.otf") format("opentype");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.center {
+     float: none;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+.intro{
+    background: url("../img/image_bg_mobile@2x.png") center top no-repeat;
+    height: 100%;
+    overflow: hidden;
+}
+
+h1{
+    font-family: "m-serif";
+    font-size: 3em;
+    line-height: 1.5;
+}
+
+.pitch-logo{
+    margin-top: 3rem;
+    width: 141px;
+    position: relative;
+    margin-left: -72px;
+    left: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+}
+
+h1.pitch{
+    margin-top: 3.5rem;
+    text-align: center;
+}
