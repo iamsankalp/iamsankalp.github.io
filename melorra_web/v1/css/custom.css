@@ -5,7 +5,7 @@
 
 @font-face{
     font-family: "m-book";
-    src: url("../fonts/gotham-book-webfont.ttf") format("truetype");
+    src: url("../fonts/Gotham-Book.otf") format("opentype");
 }
 
 @font-face{
@@ -18,6 +18,15 @@
     margin: 0;
 }
 
+body{
+    color: #393a3d;
+}
+
+a, a:hover{
+    text-decoration: none;
+    outline: 0;
+}
+
 .center {
      float: none;
      margin-left: auto;
@@ -25,7 +34,7 @@
 }
 
 .intro{
-    background: url("../img/image_bg_mobile@2x.png") center top no-repeat;
+    background: url("../img/image_bg_mobile.png") center top no-repeat;
     background-size: cover;
     height: 150%;
     overflow: visible;
@@ -41,18 +50,20 @@ h1{
     margin-top: 3rem;
     width: 141px;
     position: relative;
-    margin-left: -72px;
     left: 50%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    display: -webkit-flex;
-    -webkit-align-items: center;
-    -webkit-justify-content: center;
+    margin-left: -72px;
 }
 
 h1.pitch{
-    margin-top: 3.5rem;
+    margin-top: 3rem;
     text-align: center;
+}
+
+.pitch-cta{
+    margin-top: 1.5rem;
+    font-family: "m-book";
+    font-size: 1.6rem;
+    color: #e94402;
+    text-align: center;
+    display: block;
 }
