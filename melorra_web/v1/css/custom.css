@@ -26,13 +26,14 @@
 
 .intro{
     background: url("../img/image_bg_mobile@2x.png") center top no-repeat;
-    height: 100%;
-    overflow: hidden;
+    background-size: cover;
+    height: 150%;
+    overflow: visible;
 }
 
 h1{
     font-family: "m-serif";
-    font-size: 3em;
+    font-size: 3rem;
     line-height: 1.5;
 }
 
