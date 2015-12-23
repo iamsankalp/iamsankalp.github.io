@@ -76,6 +76,13 @@ h1.pitch{
     display: block;
 }
 
+form{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+}
+
 #signup{
     background: #fafafa;
     padding-top: 4.5rem;
