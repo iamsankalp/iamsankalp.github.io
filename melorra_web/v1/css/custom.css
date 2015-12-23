@@ -13,13 +13,9 @@
     src: url("../fonts/Gotham-Medium.otf") format("opentype");
 }
 
-*{
-    padding: 0;
-    margin: 0;
-}
-
 body{
     color: #393a3d;
+    font-family: "m-book";
 }
 
 a, a:hover{
@@ -33,18 +29,30 @@ a, a:hover{
      margin-right: auto;
 }
 
-.intro{
-    background: url("../img/image_bg_mobile.png") center top no-repeat;
-    background-size: cover;
-    height: 150%;
-    overflow: visible;
-}
 
 h1{
     font-family: "m-serif";
     font-size: 3rem;
     line-height: 1.5;
 }
+
+h3{
+    font-size: 2.1rem;
+    font-family: "m-medium";
+}
+
+p{
+    font-size: 1.6rem;
+    font-family: "m-book";
+}
+
+.intro{
+    background: url("../img/image_bg_mobile.png") center top no-repeat;
+    background-size: cover;
+    height: 100%;
+    overflow: visible;
+}
+
 
 .pitch-logo{
     margin-top: 3rem;
@@ -66,4 +74,32 @@ h1.pitch{
     color: #e94402;
     text-align: center;
     display: block;
+}
+
+#signup{
+    background: #fafafa;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+    min-height: 1px;
+}
+
+.signup-title{
+    margin-bottom: 1rem;
+}
+
+.signup-form{
+    min-height: 48px;
+    width: 100%;
+    padding-left: 1rem;
+}
+
+.signup-form:focus{
+    outline: 0;
+    border: 1px solid #e94402;
+}
+
+.signup-subtext{
+    margin-top: 0;
+    margin-bottom: 2.4rem;
+    opacity: 0.5;
 }
