@@ -41,9 +41,15 @@ h3{
     font-family: "m-medium";
 }
 
+h4{
+    font-size: 1.9rem;
+    font-family: "m-medium";    
+}
+
 p{
     font-size: 1.6rem;
     font-family: "m-book";
+    line-height: 1.4;
 }
 
 .intro{
@@ -109,4 +115,73 @@ form{
     margin-top: 0;
     margin-bottom: 2.4rem;
     opacity: 0.5;
+}
+
+
+#why{
+    padding-top: 4.5rem;
+    padding-bottom: 9rem;    
+}
+
+.why-media{
+    width: 220px;
+    position: relative;
+    left: 50%;
+    margin-left: -110px;
+}
+
+.why-title{
+    color: #e94402;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.why-description{
+    opacity: 0.5;
+    text-align: center;
+}
+
+#interesting{
+    background: #e94402;
+}
+
+#footer{
+    background: #393a3d;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+}
+
+
+.footer-logo{
+    width: 141px;
+    position: relative;
+    left: 50%;
+    margin-left: -72px;
+}
+
+.footer-break{
+    margin-top: 3rem;
+    max-width: 60%;
+    opacity: 0.1;
+}
+
+
+li a{
+    color: #fff;
+    opacity: 0.2;
+}
+
+ul{
+    margin-top: 2.6rem;
+    list-style-type: none;
+}
+
+li{
+    display: inline;
+}
+
+.padding-li{
+    
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
