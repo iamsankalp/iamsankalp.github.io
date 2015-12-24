@@ -97,6 +97,7 @@ form{
 }
 
 .signup-title{
+    text-align: center;
     margin-bottom: 1rem;
 }
 
@@ -112,6 +113,7 @@ form{
 }
 
 .signup-subtext{
+    text-align: center;
     margin-top: 0;
     margin-bottom: 2.4rem;
     opacity: 0.5;
